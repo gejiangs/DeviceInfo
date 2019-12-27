@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AD000B1423B5DB84000FDD5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B1323B5DB84000FDD5B /* AppDelegate.m */; };
-		AD000B1723B5DB84000FDD5B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B1623B5DB84000FDD5B /* SceneDelegate.m */; };
 		AD000B1A23B5DB84000FDD5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B1923B5DB84000FDD5B /* ViewController.m */; };
 		AD000B1D23B5DB84000FDD5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD000B1B23B5DB84000FDD5B /* Main.storyboard */; };
 		AD000B1F23B5DB86000FDD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD000B1E23B5DB86000FDD5B /* Assets.xcassets */; };
 		AD000B2223B5DB86000FDD5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD000B2023B5DB86000FDD5B /* LaunchScreen.storyboard */; };
 		AD000B2523B5DB86000FDD5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B2423B5DB86000FDD5B /* main.m */; };
+		AD000B2D23B5DCD8000FDD5B /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B2C23B5DCD8000FDD5B /* DeviceInfo.m */; };
+		AD000B3023B5E26C000FDD5B /* DeviceManger.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B2F23B5E26C000FDD5B /* DeviceManger.m */; };
+		AD000B3323B5EB25000FDD5B /* DeviceLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B3223B5EB25000FDD5B /* DeviceLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD000B0F23B5DB84000FDD5B /* DeviceInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD000B1223B5DB84000FDD5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD000B1323B5DB84000FDD5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AD000B1523B5DB84000FDD5B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		AD000B1623B5DB84000FDD5B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		AD000B1823B5DB84000FDD5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AD000B1923B5DB84000FDD5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD000B1C23B5DB84000FDD5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +29,12 @@
 		AD000B2123B5DB86000FDD5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD000B2323B5DB86000FDD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD000B2423B5DB86000FDD5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD000B2B23B5DCD8000FDD5B /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		AD000B2C23B5DCD8000FDD5B /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		AD000B2E23B5E26C000FDD5B /* DeviceManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceManger.h; sourceTree = "<group>"; };
+		AD000B2F23B5E26C000FDD5B /* DeviceManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManger.m; sourceTree = "<group>"; };
+		AD000B3123B5EB25000FDD5B /* DeviceLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceLayout.h; sourceTree = "<group>"; };
+		AD000B3223B5EB25000FDD5B /* DeviceLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +69,14 @@
 			children = (
 				AD000B1223B5DB84000FDD5B /* AppDelegate.h */,
 				AD000B1323B5DB84000FDD5B /* AppDelegate.m */,
-				AD000B1523B5DB84000FDD5B /* SceneDelegate.h */,
-				AD000B1623B5DB84000FDD5B /* SceneDelegate.m */,
 				AD000B1823B5DB84000FDD5B /* ViewController.h */,
 				AD000B1923B5DB84000FDD5B /* ViewController.m */,
+				AD000B3123B5EB25000FDD5B /* DeviceLayout.h */,
+				AD000B3223B5EB25000FDD5B /* DeviceLayout.m */,
+				AD000B2E23B5E26C000FDD5B /* DeviceManger.h */,
+				AD000B2F23B5E26C000FDD5B /* DeviceManger.m */,
+				AD000B2B23B5DCD8000FDD5B /* DeviceInfo.h */,
+				AD000B2C23B5DCD8000FDD5B /* DeviceInfo.m */,
 				AD000B1B23B5DB84000FDD5B /* Main.storyboard */,
 				AD000B1E23B5DB86000FDD5B /* Assets.xcassets */,
 				AD000B2023B5DB86000FDD5B /* LaunchScreen.storyboard */,
@@ -147,9 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD000B1A23B5DB84000FDD5B /* ViewController.m in Sources */,
+				AD000B3323B5EB25000FDD5B /* DeviceLayout.m in Sources */,
 				AD000B1423B5DB84000FDD5B /* AppDelegate.m in Sources */,
 				AD000B2523B5DB86000FDD5B /* main.m in Sources */,
-				AD000B1723B5DB84000FDD5B /* SceneDelegate.m in Sources */,
+				AD000B3023B5E26C000FDD5B /* DeviceManger.m in Sources */,
+				AD000B2D23B5DCD8000FDD5B /* DeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +302,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = B4VX949QFW;
 				INFOPLIST_FILE = DeviceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = B4VX949QFW;
 				INFOPLIST_FILE = DeviceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
