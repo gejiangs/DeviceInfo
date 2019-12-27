@@ -24,6 +24,7 @@
     NSMutableArray *a = [NSMutableArray array];
 //    [a addObject:@{@"k":@"IMSI", @"v":[DeviceManger getDeviceIMSIValue]}];
 //    [a addObject:@{@"k":@"IMEI", @"v":[DeviceManger getDeviceIMEIValue]}];
+    [a addObject:@{@"k":@"设备名称", @"v":[DeviceManger getDeviceName]}];
     [a addObject:@{@"k":@"MAC地址", @"v":[DeviceManger getDeviceMacIdValue]}];
     [a addObject:@{@"k":@"运营商", @"v":[DeviceManger getDeviceCarrierName]}];
     [a addObject:@{@"k":@"网络", @"v":[DeviceManger getDeviceNetworkName]}];
@@ -40,6 +41,7 @@
     [a addObject:@{@"k":@"电量", @"v":[DeviceManger getCurrentBatteryLevel]}];
     [a addObject:@{@"k":@"电池状态", @"v":[DeviceManger getBatteryState]}];
     [a addObject:@{@"k":@"语言", @"v":[DeviceManger getDeviceLanguage]}];
+    [a addObject:@{@"k":@"地区型号", @"v":[DeviceManger getLocalizedModel]}];
     [a addObject:@{@"k":@"IP地址", @"v":[DeviceManger getDeviceIPAdress]}];
     
     [self.array removeAllObjects];

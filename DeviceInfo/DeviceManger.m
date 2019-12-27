@@ -99,6 +99,19 @@
     return [NSString stringWithFormat:@"%@",platform];
 }
 
+
+/*获取当前设备的名称*/
++ (NSString *)getDeviceName
+{
+    return [[UIDevice currentDevice] name];
+}
+
+/*获取当前地方型号*/
++ (NSString *)getLocalizedModel
+{
+    return [[UIDevice currentDevice] localizedModel];
+}
+
 /*获取当前设备的操作系统名称*/
 + (NSString *)getDeviceOSName
 {
@@ -156,29 +169,8 @@
 /// 获取精准电池电量
 + (NSString *)getCurrentBatteryLevel
 {
-    UIApplication *app = [UIApplication sharedApplication];
-//    if (app.applicationState != UIApplicationStateActive && app.applicationState!=UIApplicationStateInactive) {
-//        return @"0";
-//    }
-    NSString *level = @"0";
-    Ivar ivar=  class_getInstanceVariable([app class],"_statusBar");
-    id status  = object_getIvar(app, ivar);
-    for (id aview in [status subviews]) {
-        int batteryLevel = 0;
-        for (id bview in [aview subviews]) {
-            if ([NSStringFromClass([bview class]) caseInsensitiveCompare:@"UIStatusBarBatteryItemView"] == NSOrderedSame) {
-                Ivar ivar=  class_getInstanceVariable([bview class],"_capacity");
-                if(ivar) {
-                    batteryLevel = ((int (*)(id, Ivar))object_getIvar)(bview, ivar);
-                    if (batteryLevel > 0 && batteryLevel <= 100) {
-                        level = [NSString stringWithFormat:@"%d", batteryLevel];
-                        break;
-                    }
-                }
-            }
-        }
-    }
-    return level;
+    [UIDevice currentDevice].batteryMonitoringEnabled = YES;
+    return [NSString stringWithFormat:@"%d%@", (int)([UIDevice currentDevice].batteryLevel*100), @"%"];
 }
 
 /// 获取电池当前的状态，共有4种状态

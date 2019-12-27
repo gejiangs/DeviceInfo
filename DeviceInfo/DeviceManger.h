@@ -42,6 +42,12 @@ NS_ASSUME_NONNULL_BEGIN
 /*获取当前设备的型号名称*/
 + (NSString *)getDeviceModel;
 
+/*获取当前设备的名称*/
++ (NSString *)getDeviceName;
+
+/*获取当前地方型号*/
++ (NSString *)getLocalizedModel;
+
 /*获取当前设备的操作系统名称*/
 + (NSString *)getDeviceOSName;
 
