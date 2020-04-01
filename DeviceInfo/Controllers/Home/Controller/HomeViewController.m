@@ -20,6 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"设备信息";
+    [self initUI];
+}
+
+-(void)initUI
+{
+    [self addRightBarTitle:@"自动化检测" target:self action:@selector(rightAction)];
+}
+
+-(void)rightAction
+{
+    [self pushViewControllerName:@"AutoCheckViewController"];
 }
 
 #pragma mark - UITableView DataSource

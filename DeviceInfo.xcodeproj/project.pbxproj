@@ -46,6 +46,12 @@
 		AD61EA3524346B8800FB3D36 /* HomeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA3424346B8800FB3D36 /* HomeLayout.m */; };
 		AD61EA3B24346C4A00FB3D36 /* DeviceManger.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA3924346C4A00FB3D36 /* DeviceManger.m */; };
 		AD61EA3E24346C6700FB3D36 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA3C24346C6600FB3D36 /* DeviceInfo.m */; };
+		AD61EA4124347E6700FB3D36 /* AutoCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4024347E6700FB3D36 /* AutoCheckViewController.m */; };
+		AD61EA4424347ED400FB3D36 /* AutoCheckLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4324347ED400FB3D36 /* AutoCheckLayout.m */; };
+		AD61EA47243481B100FB3D36 /* AutoCheckModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA46243481B100FB3D36 /* AutoCheckModel.m */; };
+		AD61EA4A24348A9200FB3D36 /* AutoCheckItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4924348A9200FB3D36 /* AutoCheckItemModel.m */; };
+		AD61EA4D24348C5100FB3D36 /* AutoCheckItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */; };
+		AD61EA5024348CC700FB3D36 /* AutoCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +134,18 @@
 		AD61EA3A24346C4A00FB3D36 /* DeviceManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManger.h; sourceTree = "<group>"; };
 		AD61EA3C24346C6600FB3D36 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		AD61EA3D24346C6700FB3D36 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		AD61EA3F24347E6700FB3D36 /* AutoCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckViewController.h; sourceTree = "<group>"; };
+		AD61EA4024347E6700FB3D36 /* AutoCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckViewController.m; sourceTree = "<group>"; };
+		AD61EA4224347ED400FB3D36 /* AutoCheckLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckLayout.h; sourceTree = "<group>"; };
+		AD61EA4324347ED400FB3D36 /* AutoCheckLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckLayout.m; sourceTree = "<group>"; };
+		AD61EA45243481B100FB3D36 /* AutoCheckModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckModel.h; sourceTree = "<group>"; };
+		AD61EA46243481B100FB3D36 /* AutoCheckModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckModel.m; sourceTree = "<group>"; };
+		AD61EA4824348A9200FB3D36 /* AutoCheckItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckItemModel.h; sourceTree = "<group>"; };
+		AD61EA4924348A9200FB3D36 /* AutoCheckItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckItemModel.m; sourceTree = "<group>"; };
+		AD61EA4B24348C5100FB3D36 /* AutoCheckItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckItemViewCell.h; sourceTree = "<group>"; };
+		AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckItemViewCell.m; sourceTree = "<group>"; };
+		AD61EA4E24348CC700FB3D36 /* AutoCheckItemLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckItemLayout.h; sourceTree = "<group>"; };
+		AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckItemLayout.m; sourceTree = "<group>"; };
 		BCDCD9138CDD2CCB9BBEAF36 /* Pods_DeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9D2A18707769749057E78 /* Pods-DeviceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		DFBBB2B01EE21B120346AE4D /* Pods-DeviceInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -287,6 +305,10 @@
 		AD61E98A2434472A00FB3D36 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AD61EA45243481B100FB3D36 /* AutoCheckModel.h */,
+				AD61EA46243481B100FB3D36 /* AutoCheckModel.m */,
+				AD61EA4824348A9200FB3D36 /* AutoCheckItemModel.h */,
+				AD61EA4924348A9200FB3D36 /* AutoCheckItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,6 +316,8 @@
 		AD61E98B2434472A00FB3D36 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AD61EA3F24347E6700FB3D36 /* AutoCheckViewController.h */,
+				AD61EA4024347E6700FB3D36 /* AutoCheckViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +325,8 @@
 		AD61E98C2434472A00FB3D36 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD61EA4B24348C5100FB3D36 /* AutoCheckItemViewCell.h */,
+				AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +341,10 @@
 		AD61E98E2434472A00FB3D36 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				AD61EA4224347ED400FB3D36 /* AutoCheckLayout.h */,
+				AD61EA4324347ED400FB3D36 /* AutoCheckLayout.m */,
+				AD61EA4E24348CC700FB3D36 /* AutoCheckItemLayout.h */,
+				AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -545,8 +575,10 @@
 				AD61E9DE24345FC200FB3D36 /* CacheManager.m in Sources */,
 				AD61EA232434625000FB3D36 /* ToastView.m in Sources */,
 				AD61EA07243460B700FB3D36 /* RouterHandler.m in Sources */,
+				AD61EA4424347ED400FB3D36 /* AutoCheckLayout.m in Sources */,
 				AD61E9F524345FC200FB3D36 /* UIImage+Resize.m in Sources */,
 				AD61E9D824345FC200FB3D36 /* BaseViewController.m in Sources */,
+				AD61EA47243481B100FB3D36 /* AutoCheckModel.m in Sources */,
 				AD61E9F424345FC200FB3D36 /* NSDate+Utils.m in Sources */,
 				AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */,
 				AD61E9D924345FC200FB3D36 /* BaseNavigationController.m in Sources */,
@@ -559,12 +591,16 @@
 				AD000B1423B5DB84000FDD5B /* AppDelegate.m in Sources */,
 				AD61EA3B24346C4A00FB3D36 /* DeviceManger.m in Sources */,
 				AD000B2523B5DB86000FDD5B /* main.m in Sources */,
+				AD61EA4A24348A9200FB3D36 /* AutoCheckItemModel.m in Sources */,
+				AD61EA5024348CC700FB3D36 /* AutoCheckItemLayout.m in Sources */,
 				AD61EA262434625000FB3D36 /* DottedLineView.m in Sources */,
 				AD61EA3524346B8800FB3D36 /* HomeLayout.m in Sources */,
 				AD61EA3E24346C6700FB3D36 /* DeviceInfo.m in Sources */,
 				AD61EA3224346B5C00FB3D36 /* HomeViewController.m in Sources */,
+				AD61EA4D24348C5100FB3D36 /* AutoCheckItemViewCell.m in Sources */,
 				AD61E9ED24345FC200FB3D36 /* UIView+Utils.m in Sources */,
 				AD61EA252434625000FB3D36 /* ComboxPickerView.m in Sources */,
+				AD61EA4124347E6700FB3D36 /* AutoCheckViewController.m in Sources */,
 				AD61E9DA24345FC200FB3D36 /* PreviewManager.m in Sources */,
 				AD61EA2E2434625000FB3D36 /* VerticalButton.m in Sources */,
 				AD61E9F224345FC200FB3D36 /* UIImage+Utils.m in Sources */,
