@@ -21,8 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"自动化测试";
+    [self initUI];
 }
 
+
+-(void)initUI
+{
+    [self addRightBarTitle:@"手动检测" target:self action:@selector(rightAction)];
+}
+
+-(void)rightAction
+{
+    [self pushViewControllerName:@"HandCheckViewController"];
+}
 
 #pragma mark - UITableView DataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

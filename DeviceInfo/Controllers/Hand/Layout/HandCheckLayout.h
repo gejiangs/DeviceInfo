@@ -1,17 +1,17 @@
 //
-//  AutoCheckLayout.h
+//  HandCheckLayout.h
 //  DeviceInfo
 //
-//  Created by gejiangs on 2020/4/1.
+//  Created by gejiangs on 2020/4/2.
 //  Copyright © 2020 gejiangs. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "AutoCheckItemLayout.h"
+#import "HandCheckItemLayout.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AutoCheckLayout : NSObject
+@interface HandCheckLayout : NSObject
 
 @property (nonatomic, strong)   NSMutableArray *itemLayouts;
 

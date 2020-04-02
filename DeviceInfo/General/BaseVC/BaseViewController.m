@@ -31,9 +31,9 @@
     
     self.view.backgroundColor = AppColorMain;
     
-    if ([[self.navigationController viewControllers] count] > 1) {
-        [self resetBackBarButton];
-    }
+//    if ([[self.navigationController viewControllers] count] > 1) {
+//        [self resetBackBarButton];
+//    }
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {    

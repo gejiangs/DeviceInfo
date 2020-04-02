@@ -23,12 +23,12 @@
         AutoCheckItemLayout *itemLayout = [AutoCheckItemLayout new];
         itemLayout.title = t;
         [itemLayout layout];
-        [self.checkListArray addObject:itemLayout];
+        [self.itemLayouts addObject:itemLayout];
     }
 }
 
 #pragma mark - lazy
--(NSMutableArray *)checkListArray
+-(NSMutableArray *)itemLayouts
 {
     if (_itemLayouts == nil) {
         _itemLayouts = [NSMutableArray array];

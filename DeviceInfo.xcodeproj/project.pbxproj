@@ -13,6 +13,11 @@
 		AD000B1F23B5DB86000FDD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD000B1E23B5DB86000FDD5B /* Assets.xcassets */; };
 		AD000B2223B5DB86000FDD5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD000B2023B5DB86000FDD5B /* LaunchScreen.storyboard */; };
 		AD000B2523B5DB86000FDD5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B2423B5DB86000FDD5B /* main.m */; };
+		AD554ED824357EB800D376D6 /* HandCheckItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554ED724357EB800D376D6 /* HandCheckItemViewCell.m */; };
+		AD554EDB24357ECA00D376D6 /* HandCheckLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EDA24357ECA00D376D6 /* HandCheckLayout.m */; };
+		AD554EDE2435831100D376D6 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EDD2435831100D376D6 /* BaseCollectionViewController.m */; };
+		AD554EE12435866700D376D6 /* HandCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE02435866700D376D6 /* HandCheckItemLayout.m */; };
+		AD554EE4243586D600D376D6 /* HandCheckItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE3243586D600D376D6 /* HandCheckItemModel.m */; };
 		AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99124345FC200FB3D36 /* BaseWebViewController.m */; };
 		AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99224345FC200FB3D36 /* BaseTableViewController.m */; };
 		AD61E9D824345FC200FB3D36 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99324345FC200FB3D36 /* BaseViewController.m */; };
@@ -52,6 +57,7 @@
 		AD61EA4A24348A9200FB3D36 /* AutoCheckItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4924348A9200FB3D36 /* AutoCheckItemModel.m */; };
 		AD61EA4D24348C5100FB3D36 /* AutoCheckItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */; };
 		AD61EA5024348CC700FB3D36 /* AutoCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */; };
+		AD61EA592434A27900FB3D36 /* HandCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA582434A27900FB3D36 /* HandCheckViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +69,16 @@
 		AD000B2123B5DB86000FDD5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD000B2323B5DB86000FDD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD000B2423B5DB86000FDD5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD554ED624357EB800D376D6 /* HandCheckItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckItemViewCell.h; sourceTree = "<group>"; };
+		AD554ED724357EB800D376D6 /* HandCheckItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemViewCell.m; sourceTree = "<group>"; };
+		AD554ED924357ECA00D376D6 /* HandCheckLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckLayout.h; sourceTree = "<group>"; };
+		AD554EDA24357ECA00D376D6 /* HandCheckLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckLayout.m; sourceTree = "<group>"; };
+		AD554EDC2435831100D376D6 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
+		AD554EDD2435831100D376D6 /* BaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
+		AD554EDF2435866700D376D6 /* HandCheckItemLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckItemLayout.h; sourceTree = "<group>"; };
+		AD554EE02435866700D376D6 /* HandCheckItemLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemLayout.m; sourceTree = "<group>"; };
+		AD554EE2243586D600D376D6 /* HandCheckItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckItemModel.h; sourceTree = "<group>"; };
+		AD554EE3243586D600D376D6 /* HandCheckItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemModel.m; sourceTree = "<group>"; };
 		AD61E9832434390B00FB3D36 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AD61E99124345FC200FB3D36 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		AD61E99224345FC200FB3D36 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
@@ -146,6 +162,8 @@
 		AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckItemViewCell.m; sourceTree = "<group>"; };
 		AD61EA4E24348CC700FB3D36 /* AutoCheckItemLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckItemLayout.h; sourceTree = "<group>"; };
 		AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckItemLayout.m; sourceTree = "<group>"; };
+		AD61EA572434A27900FB3D36 /* HandCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckViewController.h; sourceTree = "<group>"; };
+		AD61EA582434A27900FB3D36 /* HandCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckViewController.m; sourceTree = "<group>"; };
 		BCDCD9138CDD2CCB9BBEAF36 /* Pods_DeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9D2A18707769749057E78 /* Pods-DeviceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		DFBBB2B01EE21B120346AE4D /* Pods-DeviceInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +240,7 @@
 			children = (
 				AD61E981243437AC00FB3D36 /* Home */,
 				AD61E984243446DE00FB3D36 /* Auto */,
+				AD61EA512434A25200FB3D36 /* Hand */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -371,6 +390,8 @@
 				AD61E99124345FC200FB3D36 /* BaseWebViewController.m */,
 				AD61E99624345FC200FB3D36 /* BaseTableViewController.h */,
 				AD61E99224345FC200FB3D36 /* BaseTableViewController.m */,
+				AD554EDC2435831100D376D6 /* BaseCollectionViewController.h */,
+				AD554EDD2435831100D376D6 /* BaseCollectionViewController.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -453,6 +474,63 @@
 				AD61EA03243460B700FB3D36 /* WebRouter.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		AD61EA512434A25200FB3D36 /* Hand */ = {
+			isa = PBXGroup;
+			children = (
+				AD61EA522434A25200FB3D36 /* Layout */,
+				AD61EA532434A25200FB3D36 /* Controller */,
+				AD61EA542434A25200FB3D36 /* Model */,
+				AD61EA552434A25200FB3D36 /* View */,
+				AD61EA562434A25200FB3D36 /* Request */,
+			);
+			path = Hand;
+			sourceTree = "<group>";
+		};
+		AD61EA522434A25200FB3D36 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				AD554ED924357ECA00D376D6 /* HandCheckLayout.h */,
+				AD554EDA24357ECA00D376D6 /* HandCheckLayout.m */,
+				AD554EDF2435866700D376D6 /* HandCheckItemLayout.h */,
+				AD554EE02435866700D376D6 /* HandCheckItemLayout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		AD61EA532434A25200FB3D36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD61EA572434A27900FB3D36 /* HandCheckViewController.h */,
+				AD61EA582434A27900FB3D36 /* HandCheckViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD61EA542434A25200FB3D36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD554EE2243586D600D376D6 /* HandCheckItemModel.h */,
+				AD554EE3243586D600D376D6 /* HandCheckItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD61EA552434A25200FB3D36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD554ED624357EB800D376D6 /* HandCheckItemViewCell.h */,
+				AD554ED724357EB800D376D6 /* HandCheckItemViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD61EA562434A25200FB3D36 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,6 +654,8 @@
 				AD61EA232434625000FB3D36 /* ToastView.m in Sources */,
 				AD61EA07243460B700FB3D36 /* RouterHandler.m in Sources */,
 				AD61EA4424347ED400FB3D36 /* AutoCheckLayout.m in Sources */,
+				AD554EDB24357ECA00D376D6 /* HandCheckLayout.m in Sources */,
+				AD554ED824357EB800D376D6 /* HandCheckItemViewCell.m in Sources */,
 				AD61E9F524345FC200FB3D36 /* UIImage+Resize.m in Sources */,
 				AD61E9D824345FC200FB3D36 /* BaseViewController.m in Sources */,
 				AD61EA47243481B100FB3D36 /* AutoCheckModel.m in Sources */,
@@ -593,10 +673,13 @@
 				AD000B2523B5DB86000FDD5B /* main.m in Sources */,
 				AD61EA4A24348A9200FB3D36 /* AutoCheckItemModel.m in Sources */,
 				AD61EA5024348CC700FB3D36 /* AutoCheckItemLayout.m in Sources */,
+				AD554EE12435866700D376D6 /* HandCheckItemLayout.m in Sources */,
 				AD61EA262434625000FB3D36 /* DottedLineView.m in Sources */,
 				AD61EA3524346B8800FB3D36 /* HomeLayout.m in Sources */,
+				AD554EDE2435831100D376D6 /* BaseCollectionViewController.m in Sources */,
 				AD61EA3E24346C6700FB3D36 /* DeviceInfo.m in Sources */,
 				AD61EA3224346B5C00FB3D36 /* HomeViewController.m in Sources */,
+				AD61EA592434A27900FB3D36 /* HandCheckViewController.m in Sources */,
 				AD61EA4D24348C5100FB3D36 /* AutoCheckItemViewCell.m in Sources */,
 				AD61E9ED24345FC200FB3D36 /* UIView+Utils.m in Sources */,
 				AD61EA252434625000FB3D36 /* ComboxPickerView.m in Sources */,
@@ -605,6 +688,7 @@
 				AD61EA2E2434625000FB3D36 /* VerticalButton.m in Sources */,
 				AD61E9F224345FC200FB3D36 /* UIImage+Utils.m in Sources */,
 				AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */,
+				AD554EE4243586D600D376D6 /* HandCheckItemModel.m in Sources */,
 				AD61E9F024345FC200FB3D36 /* UILabel+Utils.m in Sources */,
 				AD61E9DB24345FC200FB3D36 /* SystemManager.m in Sources */,
 				AD61E9F324345FC200FB3D36 /* NSString+Utils.m in Sources */,
