@@ -18,6 +18,7 @@
 		AD554EDE2435831100D376D6 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EDD2435831100D376D6 /* BaseCollectionViewController.m */; };
 		AD554EE12435866700D376D6 /* HandCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE02435866700D376D6 /* HandCheckItemLayout.m */; };
 		AD554EE4243586D600D376D6 /* HandCheckItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE3243586D600D376D6 /* HandCheckItemModel.m */; };
+		AD554F802435F3A900D376D6 /* AutoCheckProximityMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */; };
 		AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99124345FC200FB3D36 /* BaseWebViewController.m */; };
 		AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99224345FC200FB3D36 /* BaseTableViewController.m */; };
 		AD61E9D824345FC200FB3D36 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99324345FC200FB3D36 /* BaseViewController.m */; };
@@ -79,6 +80,8 @@
 		AD554EE02435866700D376D6 /* HandCheckItemLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemLayout.m; sourceTree = "<group>"; };
 		AD554EE2243586D600D376D6 /* HandCheckItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckItemModel.h; sourceTree = "<group>"; };
 		AD554EE3243586D600D376D6 /* HandCheckItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemModel.m; sourceTree = "<group>"; };
+		AD554F7E2435F3A900D376D6 /* AutoCheckProximityMonitorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckProximityMonitorView.h; sourceTree = "<group>"; };
+		AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckProximityMonitorView.m; sourceTree = "<group>"; };
 		AD61E9832434390B00FB3D36 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AD61E99124345FC200FB3D36 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		AD61E99224345FC200FB3D36 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 			children = (
 				AD61EA4B24348C5100FB3D36 /* AutoCheckItemViewCell.h */,
 				AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */,
+				AD554F7E2435F3A900D376D6 /* AutoCheckProximityMonitorView.h */,
+				AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -688,6 +693,7 @@
 				AD61EA2E2434625000FB3D36 /* VerticalButton.m in Sources */,
 				AD61E9F224345FC200FB3D36 /* UIImage+Utils.m in Sources */,
 				AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */,
+				AD554F802435F3A900D376D6 /* AutoCheckProximityMonitorView.m in Sources */,
 				AD554EE4243586D600D376D6 /* HandCheckItemModel.m in Sources */,
 				AD61E9F024345FC200FB3D36 /* UILabel+Utils.m in Sources */,
 				AD61E9DB24345FC200FB3D36 /* SystemManager.m in Sources */,

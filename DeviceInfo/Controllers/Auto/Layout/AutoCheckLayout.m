@@ -7,8 +7,12 @@
 //
 
 #import "AutoCheckLayout.h"
+#import <CoreLocation/CoreLocation.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface AutoCheckLayout ()
+
+@property (nonatomic, strong)   CMMotionManager *motionManager;
 
 @end
 
@@ -27,6 +31,30 @@
     }
 }
 
+//检查指南针
+-(BOOL)headingAvailable
+{
+    return [CLLocationManager headingAvailable];
+}
+
+/// 检测陀螺仪可用
+-(BOOL)gyroscopeAvaibale
+{
+    return self.motionManager.gyroAvailable;
+}
+
+/// 支持加速度数据
+-(BOOL)accelerometerAvailable
+{
+    return self.motionManager.accelerometerAvailable;
+}
+
+/// 磁场计
+-(BOOL)magnetometerAvailable
+{
+    return self.motionManager.magnetometerAvailable;
+}
+
 #pragma mark - lazy
 -(NSMutableArray *)itemLayouts
 {
@@ -34,6 +62,14 @@
         _itemLayouts = [NSMutableArray array];
     }
     return _itemLayouts;
+}
+
+-(CMMotionManager *)motionManager
+{
+    if (_motionManager == nil) {
+        _motionManager = [[CMMotionManager alloc] init];
+    }
+    return _motionManager;
 }
 
 @end

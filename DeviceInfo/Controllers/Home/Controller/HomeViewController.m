@@ -26,6 +26,7 @@
 -(void)initUI
 {
     [self addRightBarTitle:@"自动化检测" target:self action:@selector(rightAction)];
+
 }
 
 -(void)rightAction

@@ -42,7 +42,11 @@
 /*获取当前设备的通讯运营商名称*/
 + (NSString *)getDeviceCarrierName
 {
-    return [[[CTTelephonyNetworkInfo new] subscriberCellularProvider] carrierName];
+    NSString *carrierName = [[CTTelephonyNetworkInfo new] subscriberCellularProvider].carrierName;
+    if (carrierName == nil) {
+        return @"未知";
+    }
+    return carrierName;
 }
 
 /*获取当前设备的网络通讯名称值*/
@@ -61,7 +65,8 @@
         CTRadioAccessTechnologyeHRPD            //电信一种3G到4G的演进技术(3.75G)
         CTRadioAccessTechnologyLTE              //接近4G
      */
-    return [[CTTelephonyNetworkInfo new] currentRadioAccessTechnology];
+    NSString *netName = [[CTTelephonyNetworkInfo new] currentRadioAccessTechnology];
+    return netName ? netName : @"未知";
 }
 
 /*获取当前设备的横向最大值*/
