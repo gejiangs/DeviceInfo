@@ -24,7 +24,7 @@
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
+        self.detailTextLabel.font = [UIFont systemFontOfSize:14];
     }
     return self;
 }
@@ -34,6 +34,7 @@
     _layout = layout;
     
     self.textLabel.text = _layout.title;
+    self.detailTextLabel.text = _layout.statusText;
 }
 
 @end

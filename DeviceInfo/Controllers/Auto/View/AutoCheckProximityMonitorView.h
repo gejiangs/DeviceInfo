@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AutoCheckProximityMonitorView : UIView
 
++(void)showInView:(UIView *)view block:(nullable void(^)(BOOL normal))block;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -19,6 +19,7 @@
 		AD554EE12435866700D376D6 /* HandCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE02435866700D376D6 /* HandCheckItemLayout.m */; };
 		AD554EE4243586D600D376D6 /* HandCheckItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE3243586D600D376D6 /* HandCheckItemModel.m */; };
 		AD554F802435F3A900D376D6 /* AutoCheckProximityMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */; };
+		AD56E1482437052E0032A8E7 /* AutoCheckVolumeKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */; };
 		AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99124345FC200FB3D36 /* BaseWebViewController.m */; };
 		AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99224345FC200FB3D36 /* BaseTableViewController.m */; };
 		AD61E9D824345FC200FB3D36 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99324345FC200FB3D36 /* BaseViewController.m */; };
@@ -59,6 +60,7 @@
 		AD61EA4D24348C5100FB3D36 /* AutoCheckItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */; };
 		AD61EA5024348CC700FB3D36 /* AutoCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */; };
 		AD61EA592434A27900FB3D36 /* HandCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA582434A27900FB3D36 /* HandCheckViewController.m */; };
+		AD63E3DA243C4F3F00277B13 /* AutoCheckCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD63E3D9243C4F3F00277B13 /* AutoCheckCameraView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		AD554EE3243586D600D376D6 /* HandCheckItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemModel.m; sourceTree = "<group>"; };
 		AD554F7E2435F3A900D376D6 /* AutoCheckProximityMonitorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckProximityMonitorView.h; sourceTree = "<group>"; };
 		AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckProximityMonitorView.m; sourceTree = "<group>"; };
+		AD56E1462437052E0032A8E7 /* AutoCheckVolumeKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckVolumeKeyView.h; sourceTree = "<group>"; };
+		AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckVolumeKeyView.m; sourceTree = "<group>"; };
 		AD61E9832434390B00FB3D36 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AD61E99124345FC200FB3D36 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		AD61E99224345FC200FB3D36 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 		AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckItemLayout.m; sourceTree = "<group>"; };
 		AD61EA572434A27900FB3D36 /* HandCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckViewController.h; sourceTree = "<group>"; };
 		AD61EA582434A27900FB3D36 /* HandCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckViewController.m; sourceTree = "<group>"; };
+		AD63E3D8243C4F3F00277B13 /* AutoCheckCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckCameraView.h; sourceTree = "<group>"; };
+		AD63E3D9243C4F3F00277B13 /* AutoCheckCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckCameraView.m; sourceTree = "<group>"; };
 		BCDCD9138CDD2CCB9BBEAF36 /* Pods_DeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9D2A18707769749057E78 /* Pods-DeviceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		DFBBB2B01EE21B120346AE4D /* Pods-DeviceInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -351,6 +357,10 @@
 				AD61EA4C24348C5100FB3D36 /* AutoCheckItemViewCell.m */,
 				AD554F7E2435F3A900D376D6 /* AutoCheckProximityMonitorView.h */,
 				AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */,
+				AD56E1462437052E0032A8E7 /* AutoCheckVolumeKeyView.h */,
+				AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */,
+				AD63E3D8243C4F3F00277B13 /* AutoCheckCameraView.h */,
+				AD63E3D9243C4F3F00277B13 /* AutoCheckCameraView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -681,11 +691,13 @@
 				AD554EE12435866700D376D6 /* HandCheckItemLayout.m in Sources */,
 				AD61EA262434625000FB3D36 /* DottedLineView.m in Sources */,
 				AD61EA3524346B8800FB3D36 /* HomeLayout.m in Sources */,
+				AD56E1482437052E0032A8E7 /* AutoCheckVolumeKeyView.m in Sources */,
 				AD554EDE2435831100D376D6 /* BaseCollectionViewController.m in Sources */,
 				AD61EA3E24346C6700FB3D36 /* DeviceInfo.m in Sources */,
 				AD61EA3224346B5C00FB3D36 /* HomeViewController.m in Sources */,
 				AD61EA592434A27900FB3D36 /* HandCheckViewController.m in Sources */,
 				AD61EA4D24348C5100FB3D36 /* AutoCheckItemViewCell.m in Sources */,
+				AD63E3DA243C4F3F00277B13 /* AutoCheckCameraView.m in Sources */,
 				AD61E9ED24345FC200FB3D36 /* UIView+Utils.m in Sources */,
 				AD61EA252434625000FB3D36 /* ComboxPickerView.m in Sources */,
 				AD61EA4124347E6700FB3D36 /* AutoCheckViewController.m in Sources */,

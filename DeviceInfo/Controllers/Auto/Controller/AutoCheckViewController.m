@@ -9,6 +9,9 @@
 #import "AutoCheckViewController.h"
 #import "AutoCheckLayout.h"
 #import "AutoCheckItemViewCell.h"
+#import "AutoCheckProximityMonitorView.h"
+#import "AutoCheckVolumeKeyView.h"
+#import "AutoCheckCameraView.h"
 
 @interface AutoCheckViewController ()
 
@@ -27,12 +30,65 @@
 
 -(void)initUI
 {
-    [self addRightBarTitle:@"手动检测" target:self action:@selector(rightAction)];
+    [self addRightBarTitle:@"开始检测" target:self action:@selector(rightAction)];
 }
 
 -(void)rightAction
 {
-    [self pushViewControllerName:@"HandCheckViewController"];
+    [self autoCheckWithIndex:0];
+}
+
+-(void)autoCheckWithIndex:(NSInteger)index
+{
+    [self updateItemCheckingWithIndex:index];
+    if (index == 0) {
+        [AutoCheckProximityMonitorView showInView:self.view.window block:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:1];
+        }];
+    }else if (index == 1){
+        [AutoCheckVolumeKeyView showInView:self.view.window subObserverBlock:^(BOOL normal) {
+            if (normal) {
+                [AutoCheckVolumeKeyView showInView:self.view.window plusObserverBlock:^(BOOL normal) {
+                    [self updateItemStatusWithIndex:index normal:normal];
+                    [self autoCheckWithIndex:2];
+                }];
+            }else{
+                [self updateItemStatusWithIndex:index normal:normal];
+                [self autoCheckWithIndex:2];
+            }
+        }];
+    }else if (index == 2){
+        [AutoCheckCameraView showInView:self.view.window frontObserverBlock:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:3];
+        }];
+    }else if (index == 3){
+        [AutoCheckCameraView showInView:self.view.window backObserverBlock:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:4];
+        }];
+    }
+}
+
+-(void)updateItemCheckingWithIndex:(NSInteger)index
+{
+    if (self.layout.itemLayouts.count <= index) {
+        return;
+    }
+    AutoCheckItemLayout *itemLayout = self.layout.itemLayouts[index];
+    [itemLayout updateCheckItemStatus:AutoCheckItemStatusChecking];
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+}
+
+-(void)updateItemStatusWithIndex:(NSInteger)index normal:(BOOL)normal
+{
+    if (self.layout.itemLayouts.count <= index) {
+        return;
+    }
+    AutoCheckItemLayout *itemLayout = self.layout.itemLayouts[index];
+    [itemLayout updateCheckItemStatus:normal ? AutoCheckItemStatusNormal : AutoCheckItemStatusAbnormal];
+    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:index inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 #pragma mark - UITableView DataSource

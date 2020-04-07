@@ -14,9 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AutoCheckItemLayout : NSObject
 
 @property (nonatomic, copy)     NSString *title;
+@property (nonatomic, copy)     NSString *statusText;
 @property (nonatomic, strong)   AutoCheckItemModel *model;
 
 -(void)layout;
+
+-(void)updateCheckItemStatus:(AutoCheckItemStatus)status;
 
 @end
 

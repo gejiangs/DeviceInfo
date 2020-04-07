@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)layout;
 
+-(void)autoCheckWithBlock:(void(^)(void))block;
+
 @end
 
 NS_ASSUME_NONNULL_END

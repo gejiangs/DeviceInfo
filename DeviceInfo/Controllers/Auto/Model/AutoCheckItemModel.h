@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, AutoCheckItemStatus){
     AutoCheckItemStatusNone = 0,        //未检查
-    AutoCheckItemStatusNormal = 1,      //正常
-    AutoCheckItemStatusAbnormal = 2     //不正常
+    AutoCheckItemStatusChecking = 1,    //正在检测
+    AutoCheckItemStatusNormal = 2,      //正常
+    AutoCheckItemStatusAbnormal = 3     //不正常
 };
 
 @interface AutoCheckItemModel : NSObject

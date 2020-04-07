@@ -20,7 +20,8 @@
 
 -(void)layout
 {
-    NSArray *titles = @[@"电池",@"喇叭",@"底部麦克风",@"前麦克风",@"后麦克风",@"内存",@"处理器",@"硬盘",@"重力感应",@"陀螺仪",@"磁力计",@"GPS",@"电池罗盘",@"压力计"];
+    NSArray *titles = @[@"距离传感器", @"按键功能", @"前摄像头", @"后摄像头"];
+    //@[@"电池",@"喇叭",@"底部麦克风",@"前麦克风",@"后麦克风",@"内存",@"处理器",@"硬盘",@"重力感应",@"陀螺仪",@"磁力计",@"GPS",@"电池罗盘",@"压力计"];
     
     [self.itemLayouts removeAllObjects];
     for (NSString *t in titles) {
@@ -29,6 +30,16 @@
         [itemLayout layout];
         [self.itemLayouts addObject:itemLayout];
     }
+}
+
+-(void)autoCheckWithBlock:(void (^)(void))block
+{
+    
+}
+
+-(void)autoCheckWithIndex:(NSInteger)index
+{
+    
 }
 
 //检查指南针
