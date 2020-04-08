@@ -77,7 +77,7 @@
  
  @param lineSpacing 行间距
  */
--(void)setLineSpacing:(CGFloat)lineSpacing
+-(void)updateLineSpacing:(CGFloat)lineSpacing
 {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setLineSpacing:lineSpacing];        //设置行间距

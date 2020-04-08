@@ -12,6 +12,10 @@
 #import "AutoCheckProximityMonitorView.h"
 #import "AutoCheckVolumeKeyView.h"
 #import "AutoCheckCameraView.h"
+#import <LocalAuthentication/LocalAuthentication.h>
+#import "AutoCheckGyroscopeView.h"
+#import "CustomAlertView.h"
+#import "AutoCheckScreenDisplayView.h"
 
 @interface AutoCheckViewController ()
 
@@ -68,8 +72,64 @@
             [self updateItemStatusWithIndex:index normal:normal];
             [self autoCheckWithIndex:4];
         }];
+    }else if (index == 4){
+        LAContext *context = [[LAContext alloc] init];
+        context.localizedFallbackTitle = @"输入密码";
+        NSError *error;
+        if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&error]) {
+            [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:@"FaceID 描述" reply:^(BOOL success, NSError * _Nullable error) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self updateItemStatusWithIndex:index normal:success];
+                    [self autoCheckWithIndex:5];
+                });
+            }];
+        }else{
+            [self updateItemStatusWithIndex:index normal:NO];
+            [self autoCheckWithIndex:5];
+        }
+    }else if (index == 5){
+        [AutoCheckGyroscopeView showInView:self.view.window block:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:6];            
+        }];
+    }else if (index == 6){
+        [self checkCallFunctionWithIndex:index];
+    }else if (index == 7){
+        [AutoCheckScreenDisplayView showInView:self.view.window block:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:index+1];
+        }];
+    }else if (index == 7){
+        
     }
 }
+
+-(void)checkCallFunctionWithIndex:(NSInteger)index
+{
+    CustomAlertView *alertView = [[CustomAlertView alloc] initWithTitle:@"拨打114" message:@"确认通话功能是否正常" cancel:@"不允许" sure:@"好"];
+    [alertView showWithCancelBlock:^{
+        [self updateItemStatusWithIndex:index normal:NO];
+        [self autoCheckWithIndex:index+1];
+    } sureBlock:^{
+        NSURL *url = [NSURL URLWithString:@"telprompt://114"];
+        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
+            [self showCheckCallFunctionResultWithIndex:index];
+        }];
+    }];
+}
+
+-(void)showCheckCallFunctionResultWithIndex:(NSInteger)index
+{
+    CustomAlertView *alertView = [[CustomAlertView alloc] initWithTitle:@"" message:@"通话语音是否正常" cancel:@"不正常" sure:@"正常"];
+    [alertView showWithCancelBlock:^{
+        [self updateItemStatusWithIndex:index normal:NO];
+        [self autoCheckWithIndex:index+1];
+    } sureBlock:^{
+        [self updateItemStatusWithIndex:index normal:YES];
+        [self autoCheckWithIndex:index+1];
+    }];
+}
+
 
 -(void)updateItemCheckingWithIndex:(NSInteger)index
 {

@@ -30,5 +30,5 @@
  
  @param lineSpacing 行间距
  */
--(void)setLineSpacing:(CGFloat)lineSpacing;
+-(void)updateLineSpacing:(CGFloat)lineSpacing;
 @end

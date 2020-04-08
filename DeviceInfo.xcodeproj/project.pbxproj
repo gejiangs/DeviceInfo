@@ -19,6 +19,8 @@
 		AD554EE12435866700D376D6 /* HandCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE02435866700D376D6 /* HandCheckItemLayout.m */; };
 		AD554EE4243586D600D376D6 /* HandCheckItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EE3243586D600D376D6 /* HandCheckItemModel.m */; };
 		AD554F802435F3A900D376D6 /* AutoCheckProximityMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */; };
+		AD55C2E9243DB9A400DA226A /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55C2E8243DB9A400DA226A /* CustomAlertView.m */; };
+		AD55C2EC243DC13600DA226A /* AutoCheckScreenDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55C2EB243DC13600DA226A /* AutoCheckScreenDisplayView.m */; };
 		AD56E1482437052E0032A8E7 /* AutoCheckVolumeKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */; };
 		AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99124345FC200FB3D36 /* BaseWebViewController.m */; };
 		AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99224345FC200FB3D36 /* BaseTableViewController.m */; };
@@ -61,6 +63,7 @@
 		AD61EA5024348CC700FB3D36 /* AutoCheckItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA4F24348CC700FB3D36 /* AutoCheckItemLayout.m */; };
 		AD61EA592434A27900FB3D36 /* HandCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61EA582434A27900FB3D36 /* HandCheckViewController.m */; };
 		AD63E3DA243C4F3F00277B13 /* AutoCheckCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD63E3D9243C4F3F00277B13 /* AutoCheckCameraView.m */; };
+		AD63E3DD243C841D00277B13 /* AutoCheckGyroscopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD63E3DC243C841D00277B13 /* AutoCheckGyroscopeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,10 @@
 		AD554EE3243586D600D376D6 /* HandCheckItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemModel.m; sourceTree = "<group>"; };
 		AD554F7E2435F3A900D376D6 /* AutoCheckProximityMonitorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckProximityMonitorView.h; sourceTree = "<group>"; };
 		AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckProximityMonitorView.m; sourceTree = "<group>"; };
+		AD55C2E7243DB9A400DA226A /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		AD55C2E8243DB9A400DA226A /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		AD55C2EA243DC13600DA226A /* AutoCheckScreenDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckScreenDisplayView.h; sourceTree = "<group>"; };
+		AD55C2EB243DC13600DA226A /* AutoCheckScreenDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckScreenDisplayView.m; sourceTree = "<group>"; };
 		AD56E1462437052E0032A8E7 /* AutoCheckVolumeKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckVolumeKeyView.h; sourceTree = "<group>"; };
 		AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckVolumeKeyView.m; sourceTree = "<group>"; };
 		AD61E9832434390B00FB3D36 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -173,6 +180,8 @@
 		AD61EA582434A27900FB3D36 /* HandCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckViewController.m; sourceTree = "<group>"; };
 		AD63E3D8243C4F3F00277B13 /* AutoCheckCameraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckCameraView.h; sourceTree = "<group>"; };
 		AD63E3D9243C4F3F00277B13 /* AutoCheckCameraView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckCameraView.m; sourceTree = "<group>"; };
+		AD63E3DB243C841D00277B13 /* AutoCheckGyroscopeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckGyroscopeView.h; sourceTree = "<group>"; };
+		AD63E3DC243C841D00277B13 /* AutoCheckGyroscopeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckGyroscopeView.m; sourceTree = "<group>"; };
 		BCDCD9138CDD2CCB9BBEAF36 /* Pods_DeviceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9D2A18707769749057E78 /* Pods-DeviceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.release.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		DFBBB2B01EE21B120346AE4D /* Pods-DeviceInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceInfo.debug.xcconfig"; path = "Target Support Files/Pods-DeviceInfo/Pods-DeviceInfo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -361,6 +370,10 @@
 				AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */,
 				AD63E3D8243C4F3F00277B13 /* AutoCheckCameraView.h */,
 				AD63E3D9243C4F3F00277B13 /* AutoCheckCameraView.m */,
+				AD63E3DB243C841D00277B13 /* AutoCheckGyroscopeView.h */,
+				AD63E3DC243C841D00277B13 /* AutoCheckGyroscopeView.m */,
+				AD55C2EA243DC13600DA226A /* AutoCheckScreenDisplayView.h */,
+				AD55C2EB243DC13600DA226A /* AutoCheckScreenDisplayView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,6 +462,8 @@
 				AD61EA0D2434624E00FB3D36 /* ToastView.m */,
 				AD61EA0E2434624E00FB3D36 /* VerticalButton.h */,
 				AD61EA202434625000FB3D36 /* VerticalButton.m */,
+				AD55C2E7243DB9A400DA226A /* CustomAlertView.h */,
+				AD55C2E8243DB9A400DA226A /* CustomAlertView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -679,7 +694,9 @@
 				AD61E9D924345FC200FB3D36 /* BaseNavigationController.m in Sources */,
 				AD61EA2B2434625000FB3D36 /* BaseTableView.m in Sources */,
 				AD61E9EE24345FC200FB3D36 /* NSObject+Utils.m in Sources */,
+				AD55C2EC243DC13600DA226A /* AutoCheckScreenDisplayView.m in Sources */,
 				AD61EA242434625000FB3D36 /* ConfirmView.m in Sources */,
+				AD63E3DD243C841D00277B13 /* AutoCheckGyroscopeView.m in Sources */,
 				AD61EA282434625000FB3D36 /* LineTitleView.m in Sources */,
 				AD61E9F124345FC200FB3D36 /* UIViewController+Utils.m in Sources */,
 				AD61EA2A2434625000FB3D36 /* BaseView.m in Sources */,
@@ -707,6 +724,7 @@
 				AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */,
 				AD554F802435F3A900D376D6 /* AutoCheckProximityMonitorView.m in Sources */,
 				AD554EE4243586D600D376D6 /* HandCheckItemModel.m in Sources */,
+				AD55C2E9243DB9A400DA226A /* CustomAlertView.m in Sources */,
 				AD61E9F024345FC200FB3D36 /* UILabel+Utils.m in Sources */,
 				AD61E9DB24345FC200FB3D36 /* SystemManager.m in Sources */,
 				AD61E9F324345FC200FB3D36 /* NSString+Utils.m in Sources */,
