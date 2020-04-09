@@ -16,6 +16,8 @@
 #import "AutoCheckGyroscopeView.h"
 #import "CustomAlertView.h"
 #import "AutoCheckScreenDisplayView.h"
+#import "AutoCheckTouchView.h"
+#import "AutoCheckPowerKeyView.h"
 
 @interface AutoCheckViewController ()
 
@@ -99,8 +101,21 @@
             [self updateItemStatusWithIndex:index normal:normal];
             [self autoCheckWithIndex:index+1];
         }];
-    }else if (index == 7){
-        
+    }else if (index == 8){
+        [AutoCheckTouchView showInView:self.view.window block:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:index+1];
+        }];
+    }else if (index == 9){
+        [self.layout checkTorch:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:index+1];
+        }];
+    }else if (index == 10){
+        [AutoCheckPowerKeyView showInView:self.view.window block:^(BOOL normal) {
+            [self updateItemStatusWithIndex:index normal:normal];
+            [self autoCheckWithIndex:index+1];
+        }];
     }
 }
 

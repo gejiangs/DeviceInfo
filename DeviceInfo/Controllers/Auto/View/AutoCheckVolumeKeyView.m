@@ -15,6 +15,7 @@
 @property (nonatomic, assign)               BOOL isShow;
 @property (nonatomic, strong)               UIView *bgView;
 @property (nonatomic, strong)               UILabel *volumeLabel;
+@property (nonatomic, strong)               UIImageView *imageView;
 @property (nonatomic, copy, nullable)       void(^checkPlusBlock)(BOOL normal);
 @property (nonatomic, copy, nullable)       void(^checkSubBlock)(BOOL normal);
 @property (nonatomic, assign)               CGFloat currentVolume;
@@ -56,7 +57,15 @@
     self.volumeLabel = [contentView addLabel:@"" font:[UIFont systemFontOfSize:16] color:AppColorGreen];
     [_volumeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(contentView);
-        make.top.offset(50);
+        make.top.offset(20);
+    }];
+    
+    self.imageView = [contentView addImageView];
+    _imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [_imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_volumeLabel.mas_bottom).offset(10);
+        make.left.offset(10);
+        make.right.offset(-10);
     }];
     
     UIButton *backButton = [contentView addButton:@"异常" target:self action:@selector(backAction)];
@@ -131,6 +140,7 @@
     AutoCheckVolumeKeyView *checkView = [[AutoCheckVolumeKeyView alloc] init];
     checkView.checkPlusBlock = block;
     checkView.volumeLabel.text = @"请按音量“+”键";
+    checkView.imageView.image = [UIImage imageNamed:@"checking_volume_big"];
     [view addSubview:checkView];
     [checkView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(view);
@@ -146,6 +156,7 @@
     AutoCheckVolumeKeyView *checkView = [[AutoCheckVolumeKeyView alloc] init];
     checkView.checkSubBlock = block;
     checkView.volumeLabel.text = @"请按音量“-”键";
+    checkView.imageView.image = [UIImage imageNamed:@"checking_volume_small"];
     [view addSubview:checkView];
     [checkView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(view);

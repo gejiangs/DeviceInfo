@@ -20,5 +20,10 @@
     return YES;
 }
 
+-(void)applicationProtectedDataWillBecomeUnavailable:(UIApplication *)application
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NofiApplicationScreenLocked" object:nil];
+}
+
 
 @end

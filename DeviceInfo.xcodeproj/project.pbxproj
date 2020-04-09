@@ -13,6 +13,7 @@
 		AD000B1F23B5DB86000FDD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD000B1E23B5DB86000FDD5B /* Assets.xcassets */; };
 		AD000B2223B5DB86000FDD5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD000B2023B5DB86000FDD5B /* LaunchScreen.storyboard */; };
 		AD000B2523B5DB86000FDD5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD000B2423B5DB86000FDD5B /* main.m */; };
+		AD4A3EDD243ED44300B6C908 /* AutoCheckPowerKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A3EDC243ED44300B6C908 /* AutoCheckPowerKeyView.m */; };
 		AD554ED824357EB800D376D6 /* HandCheckItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554ED724357EB800D376D6 /* HandCheckItemViewCell.m */; };
 		AD554EDB24357ECA00D376D6 /* HandCheckLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EDA24357ECA00D376D6 /* HandCheckLayout.m */; };
 		AD554EDE2435831100D376D6 /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554EDD2435831100D376D6 /* BaseCollectionViewController.m */; };
@@ -21,6 +22,7 @@
 		AD554F802435F3A900D376D6 /* AutoCheckProximityMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD554F7F2435F3A900D376D6 /* AutoCheckProximityMonitorView.m */; };
 		AD55C2E9243DB9A400DA226A /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55C2E8243DB9A400DA226A /* CustomAlertView.m */; };
 		AD55C2EC243DC13600DA226A /* AutoCheckScreenDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55C2EB243DC13600DA226A /* AutoCheckScreenDisplayView.m */; };
+		AD55C2EF243DD94B00DA226A /* AutoCheckTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55C2EE243DD94B00DA226A /* AutoCheckTouchView.m */; };
 		AD56E1482437052E0032A8E7 /* AutoCheckVolumeKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */; };
 		AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99124345FC200FB3D36 /* BaseWebViewController.m */; };
 		AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99224345FC200FB3D36 /* BaseTableViewController.m */; };
@@ -75,6 +77,8 @@
 		AD000B2123B5DB86000FDD5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD000B2323B5DB86000FDD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD000B2423B5DB86000FDD5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD4A3EDB243ED44300B6C908 /* AutoCheckPowerKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckPowerKeyView.h; sourceTree = "<group>"; };
+		AD4A3EDC243ED44300B6C908 /* AutoCheckPowerKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckPowerKeyView.m; sourceTree = "<group>"; };
 		AD554ED624357EB800D376D6 /* HandCheckItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckItemViewCell.h; sourceTree = "<group>"; };
 		AD554ED724357EB800D376D6 /* HandCheckItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandCheckItemViewCell.m; sourceTree = "<group>"; };
 		AD554ED924357ECA00D376D6 /* HandCheckLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandCheckLayout.h; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		AD55C2E8243DB9A400DA226A /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 		AD55C2EA243DC13600DA226A /* AutoCheckScreenDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckScreenDisplayView.h; sourceTree = "<group>"; };
 		AD55C2EB243DC13600DA226A /* AutoCheckScreenDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckScreenDisplayView.m; sourceTree = "<group>"; };
+		AD55C2ED243DD94B00DA226A /* AutoCheckTouchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckTouchView.h; sourceTree = "<group>"; };
+		AD55C2EE243DD94B00DA226A /* AutoCheckTouchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckTouchView.m; sourceTree = "<group>"; };
 		AD56E1462437052E0032A8E7 /* AutoCheckVolumeKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckVolumeKeyView.h; sourceTree = "<group>"; };
 		AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckVolumeKeyView.m; sourceTree = "<group>"; };
 		AD61E9832434390B00FB3D36 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -374,6 +380,10 @@
 				AD63E3DC243C841D00277B13 /* AutoCheckGyroscopeView.m */,
 				AD55C2EA243DC13600DA226A /* AutoCheckScreenDisplayView.h */,
 				AD55C2EB243DC13600DA226A /* AutoCheckScreenDisplayView.m */,
+				AD55C2ED243DD94B00DA226A /* AutoCheckTouchView.h */,
+				AD55C2EE243DD94B00DA226A /* AutoCheckTouchView.m */,
+				AD4A3EDB243ED44300B6C908 /* AutoCheckPowerKeyView.h */,
+				AD4A3EDC243ED44300B6C908 /* AutoCheckPowerKeyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -683,6 +693,7 @@
 				AD61E9DE24345FC200FB3D36 /* CacheManager.m in Sources */,
 				AD61EA232434625000FB3D36 /* ToastView.m in Sources */,
 				AD61EA07243460B700FB3D36 /* RouterHandler.m in Sources */,
+				AD4A3EDD243ED44300B6C908 /* AutoCheckPowerKeyView.m in Sources */,
 				AD61EA4424347ED400FB3D36 /* AutoCheckLayout.m in Sources */,
 				AD554EDB24357ECA00D376D6 /* HandCheckLayout.m in Sources */,
 				AD554ED824357EB800D376D6 /* HandCheckItemViewCell.m in Sources */,
@@ -691,6 +702,7 @@
 				AD61EA47243481B100FB3D36 /* AutoCheckModel.m in Sources */,
 				AD61E9F424345FC200FB3D36 /* NSDate+Utils.m in Sources */,
 				AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */,
+				AD55C2EF243DD94B00DA226A /* AutoCheckTouchView.m in Sources */,
 				AD61E9D924345FC200FB3D36 /* BaseNavigationController.m in Sources */,
 				AD61EA2B2434625000FB3D36 /* BaseTableView.m in Sources */,
 				AD61E9EE24345FC200FB3D36 /* NSObject+Utils.m in Sources */,
