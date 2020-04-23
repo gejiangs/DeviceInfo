@@ -22,4 +22,7 @@ target 'DeviceInfo' do
   pod 'YYText'
   pod 'IQKeyboardManager'
   pod 'MGJRouter'
+  pod 'NullSafe'
+  pod 'YKWoodpecker'
+  
 end

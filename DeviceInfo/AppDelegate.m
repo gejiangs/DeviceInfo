@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"testjson1" ofType:@"text"];
+    NSString *jsonText = [NSString stringWithContentsOfURL:[NSURL fileURLWithPath:jsonPath] encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *jsonDict = [jsonText mj_JSONObject];
+    NSLog(@"jsonDict:%@", jsonDict);
+    NSString *name = jsonDict[@"info"][@"name"];
+    NSLog(@"name:%@", name);
+    
     return YES;
 }
 

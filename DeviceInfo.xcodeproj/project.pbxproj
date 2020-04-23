@@ -24,6 +24,7 @@
 		AD55C2EC243DC13600DA226A /* AutoCheckScreenDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55C2EB243DC13600DA226A /* AutoCheckScreenDisplayView.m */; };
 		AD55C2EF243DD94B00DA226A /* AutoCheckTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD55C2EE243DD94B00DA226A /* AutoCheckTouchView.m */; };
 		AD56E1482437052E0032A8E7 /* AutoCheckVolumeKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */; };
+		AD5CB71B2444170700EE7764 /* testjson1.text in Resources */ = {isa = PBXBuildFile; fileRef = AD5CB71A2444170700EE7764 /* testjson1.text */; };
 		AD61E9D624345FC200FB3D36 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99124345FC200FB3D36 /* BaseWebViewController.m */; };
 		AD61E9D724345FC200FB3D36 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99224345FC200FB3D36 /* BaseTableViewController.m */; };
 		AD61E9D824345FC200FB3D36 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD61E99324345FC200FB3D36 /* BaseViewController.m */; };
@@ -99,6 +100,7 @@
 		AD55C2EE243DD94B00DA226A /* AutoCheckTouchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckTouchView.m; sourceTree = "<group>"; };
 		AD56E1462437052E0032A8E7 /* AutoCheckVolumeKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCheckVolumeKeyView.h; sourceTree = "<group>"; };
 		AD56E1472437052E0032A8E7 /* AutoCheckVolumeKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCheckVolumeKeyView.m; sourceTree = "<group>"; };
+		AD5CB71A2444170700EE7764 /* testjson1.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = testjson1.text; sourceTree = "<group>"; };
 		AD61E9832434390B00FB3D36 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		AD61E99124345FC200FB3D36 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
 		AD61E99224345FC200FB3D36 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				AD61E980243437AC00FB3D36 /* Controllers */,
 				AD000B1223B5DB84000FDD5B /* AppDelegate.h */,
 				AD000B1323B5DB84000FDD5B /* AppDelegate.m */,
+				AD5CB71A2444170700EE7764 /* testjson1.text */,
 				AD000B1B23B5DB84000FDD5B /* Main.storyboard */,
 				AD000B1E23B5DB86000FDD5B /* Assets.xcassets */,
 				AD000B2023B5DB86000FDD5B /* LaunchScreen.storyboard */,
@@ -632,6 +635,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5CB71B2444170700EE7764 /* testjson1.text in Resources */,
 				AD000B2223B5DB86000FDD5B /* LaunchScreen.storyboard in Resources */,
 				AD000B1F23B5DB86000FDD5B /* Assets.xcassets in Resources */,
 				AD000B1D23B5DB84000FDD5B /* Main.storyboard in Resources */,
